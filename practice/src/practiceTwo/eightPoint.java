@@ -22,12 +22,6 @@ public class eightPoint {
     }
     
      public String printDay(int iniDay){
-         
-         switch(iniDay){
-            case 1:
-                
-        
-        }
         String dia = "";
         switch(getIniDay()){
             case 1:
