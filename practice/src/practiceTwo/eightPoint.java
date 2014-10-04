@@ -23,6 +23,11 @@ public class eightPoint {
     
      public String printDay(int iniDay){
         String dia = "";
+        switch(getIniDay()){
+            case 1:
+              
+        }
+        
         if(getDay() > 7 && getDay() <= 14){
             setDay(day - 7); 
         }
