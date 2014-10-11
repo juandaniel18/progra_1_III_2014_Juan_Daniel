@@ -50,7 +50,8 @@ public class Main1 {
                             System.out.println("Digite el salario del empleado de la tarde # " + (i + 1));
                             t3.agregarSalarioTarde(teclado.nextFloat());
                         }
-                        System.out.println(t3.imprimirSalario());;
+                        System.out.println(t3.imprimirSalario());
+                        ;
                 }
             } while (opt < 5);
         }
