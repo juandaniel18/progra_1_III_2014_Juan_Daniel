@@ -17,9 +17,8 @@ public class fourthPoint {
     public boolean ordenado() {
         boolean ordenado = true;
         int numAnterior = 0;
-
         for (int i = 0; i < numeros.length; i++) {
-            if(numeros[i] <= 1){
+            if(numeros[i] >= 1){
             numAnterior = numeros[i - 1];
             }
             if (numAnterior > numeros[i]) {
