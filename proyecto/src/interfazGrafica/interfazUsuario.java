@@ -2,14 +2,14 @@ package interfazGrafica;
 
 import javax.swing.JFrame;
 import javax.swing.JButton;
-import java.awt.FlowLayout;
+import java.awt.GridLayout;
 import javax.swing.JPanel;
 
 public class interfazUsuario {
 
     JFrame tablero = new JFrame("Cuatro en línea");
-    JButton botones[][] = new JButton[6][7];
-    FlowLayout layout = new FlowLayout();
+    public JButton botones[][] = new JButton[6][7];
+    GridLayout layout = new GridLayout(6, 7);
     JPanel panel = new JPanel();
 
     public void configurarTablero() {
@@ -26,17 +26,9 @@ public class interfazUsuario {
     public void agregarBotones() {
         for (int i = 0; i < botones.length; i++) {
             for (int j = 0; j < botones[0].length; j++) {
-                panel.add(botones[i][j]=new JButton());
+                panel.add(botones[i][j] = new JButton());
             }
         }
     }
-
-    public static void main(String[] args) {
-        interfazUsuario t = new interfazUsuario();
-        t.configurarTablero();
-        t.asignarLayout();
-        t.agregarBotones();
-
-    }
-
+   
 }
