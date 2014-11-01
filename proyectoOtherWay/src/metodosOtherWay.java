@@ -5,14 +5,15 @@ public class metodosOtherWay {
     private String jugador2 = "";
     private int ronda = 0;
     public int filaactual = 0;
-    
+
     public int getRonda() {
         return ronda;
     }
 
+    
     public int asignarFila() {
         int fila = 5;
-        if(this.ronda > 7) {
+        if (this.ronda > 7) {
             fila--;
         }
         return fila;
@@ -57,10 +58,10 @@ public class metodosOtherWay {
             this.filaactual = x;
             if (letra != 'X' && letra != 'O') {
                 this.table[x][columna] = determinarFicha();
+                setRonda();
                 break;
             }
         }
-        setRonda();
     }
 
     public void reiniciarJuego() {

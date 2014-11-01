@@ -62,8 +62,6 @@ public class main {
                         }
                         logica.reiniciarJuego();
                         System.out.println(logica.crearTablero());
-                    } else {
-                        System.exit(0);
                     }
                     break;
 
@@ -80,7 +78,7 @@ public class main {
                     } while (y < 0 || y > 6);
                     logica.colocarFicha(y);
                     System.out.println(logica.crearTablero());
-                    
+
                     boolean validarHorizontal = logica.validarHorizontal(logica.asignarFila());
                     boolean validarVertical = logica.validarVertical(y);
                     boolean validarIzqArriba = logica.validarIzqArriba(logica.filaactual, y);
